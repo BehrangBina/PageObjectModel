@@ -1,14 +1,13 @@
-﻿using System.ComponentModel;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
+using TechTalk.SpecFlow;
 
 namespace PageObjectModel.Utils.Selenium
 {
     [Binding]
     internal class Driver
     {
-        internal static IWebDriver Browser()
-        {
-            return DriverController.Instance.WebDriver;
-        }
+        internal static IWebDriver Browser()  =>  DriverController.Instance.WebDriver;
+
+    
     }
 }

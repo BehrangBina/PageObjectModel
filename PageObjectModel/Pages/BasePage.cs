@@ -1,6 +1,9 @@
-﻿namespace PageObjectModel.Pages
+﻿using OpenQA.Selenium;
+
+namespace PageObjectModel.Pages
 {
-    public class BasePage
+    public class BasePage:Page
     {
+        public IWebDriver Driver { get; internal set; }
     }
 }
