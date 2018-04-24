@@ -1,6 +1,6 @@
 ﻿namespace PageObjectModel.Steps
 {
-    public class DynamicTableSteps
+    public sealed class DynamicTableSteps:BaseSteps
     {
     }
 }

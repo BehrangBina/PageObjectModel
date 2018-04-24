@@ -1,6 +1,6 @@
 ﻿namespace PageObjectModel.Steps
 {
-    public class ValidationSteps
+    public sealed class ValidationSteps:BaseSteps
     {
     }
 }

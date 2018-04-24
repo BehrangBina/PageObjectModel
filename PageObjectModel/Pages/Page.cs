@@ -3,7 +3,9 @@
 namespace PageObjectModel.Pages
 {
     /// <summary>
-    /// Abstract so cannot get instantiated
+    /// this class is primarily created as a Inheritable class. An abstract class enables other classes to inherit from this class, 
+    /// but forbids to instantiate. One can inherit from an abstract class but we cannot create objects of an abstract class. 
+    /// Abstract class can have abstract as well as non abstract methods. Abstract methods are those which are not having method definition.
     /// The purpose of an abstract class is to provide
     /// a common definition of a base class that multiple derived classes can share
     /// </summary>

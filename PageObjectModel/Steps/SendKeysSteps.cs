@@ -1,6 +1,6 @@
 ﻿namespace PageObjectModel.Steps
 {
-    public class SendKeysSteps
+    public sealed class SendKeysSteps:BaseSteps
     {
     }
 }

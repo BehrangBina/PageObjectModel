@@ -1,6 +1,6 @@
 ﻿namespace PageObjectModel.Steps
 {
-    public class VoidClickStesps
+    public sealed class VoidClickStesps:BaseSteps
     {
     }
 }
