@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.InteropServices;
+using OpenQA.Selenium;
+using OpenQA.Selenium.PhantomJS;
 
 namespace PageObjectModel.Utils.Drivers
 {
-    public class PhoantomJsWebDriver
+    internal static class PhoantomJsWebDriver
     {
+        internal static IWebDriver LoadPhanomJsDriver()
+        {
+            var driverService = PhantomJSDriverService.CreateDefaultService();
+            driverService.IgnoreSslErrors = true;
+            driverService.LoadImages = false;
+            driverService.Proxy = "none";
+            driverService.HideCommandPromptWindow = true;
+            var driver= new PhantomJSDriver(driverService);
+            return driver;
+        } 
     }
 }

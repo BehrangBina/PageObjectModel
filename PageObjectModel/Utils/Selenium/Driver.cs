@@ -1,6 +1,14 @@
-﻿namespace PageObjectModel.Utils.Selenium
+﻿using System.ComponentModel;
+using OpenQA.Selenium;
+
+namespace PageObjectModel.Utils.Selenium
 {
-    public class Driver
+    [Binding]
+    internal class Driver
     {
+        internal static IWebDriver Browser()
+        {
+            return DriverController.Instance.WebDriver;
+        }
     }
 }
