@@ -1,4 +1,5 @@
-﻿using TechTalk.SpecFlow;
+﻿using PageObjectModel.Utils.Selenium;
+using TechTalk.SpecFlow;
 
 namespace PageObjectModel.Steps
 {
@@ -13,7 +14,13 @@ namespace PageObjectModel.Steps
     [Binding]
     public sealed class BaseScenarioSteps:BaseSteps
     {
+        [Given(@"I navigate to the home page")]
+        public void GivenINavigateToTheHomePage()
+        {
+            var url = ToBeReplacedWithProjectConf.Url;
+            Driver.Browser().Navigate().GoToUrl(url);
+        }
 
-        
+
     }
 }
