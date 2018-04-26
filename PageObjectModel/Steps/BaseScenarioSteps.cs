@@ -25,7 +25,11 @@ namespace PageObjectModel.Steps
         {
             InstanceOf<BasePage>().ValidatePageTitle(expectedTitle);
         }
-
+        [Then(@"I can see the web url ""(.*)""")]
+        public void ThenICanSeeTheWebUrl(string expectedUrl)
+        {
+            InstanceOf<BasePage>().ValidatePageUrl(expectedUrl);
+        }
 
     }
 }

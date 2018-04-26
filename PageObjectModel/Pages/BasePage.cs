@@ -9,6 +9,7 @@ namespace PageObjectModel.Pages
     {
         public IWebDriver Driver { get; internal set; }
         public string GetTitle => Driver.Title;
+        public string GetUrl => Driver.Url;
 
         public void NavigateMainEnterPoint()
         {
@@ -19,9 +20,17 @@ namespace PageObjectModel.Pages
 
         public void ValidatePageTitle(string expectedTitle)
         {
-            var currentTile = Driver.Title.Contains(expectedTitle);
+            var currentTile = GetTitle.Contains(expectedTitle);
             var messsage = $":: Title: {GetTitle} - Expected:{expectedTitle}";
             Assert.IsTrue(currentTile,$"#Error: {messsage}");
+            Console.Out.WriteLine(messsage);
+        }
+
+        public void ValidatePageUrl(string expectedUrl)
+        {
+            var currentUrl = GetUrl.Contains(expectedUrl);
+            var messsage = $":: URL: {GetTitle} - Expected:{expectedUrl}";
+            Assert.IsTrue(currentUrl, $"#Error: {messsage}");
             Console.Out.WriteLine(messsage);
         }
     }
