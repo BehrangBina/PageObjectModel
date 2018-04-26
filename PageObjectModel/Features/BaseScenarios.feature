@@ -1,6 +1,7 @@
-﻿Feature: EnterPointsScenarios
-These are the enter point scenarios tto the website
+﻿Feature: BaseScenarios
+These scenarios can be used in any projects
 
 @Debug
-Scenario: Access Main Enter Point
+Scenario: Validate the title of a website
 	Given  I navigate to the home page
+	Then   I can see the web title "Wikipedia"

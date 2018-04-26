@@ -18,8 +18,8 @@ namespace PageObjectModel.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("EnterPointsScenarios")]
-    public partial class EnterPointsScenariosFeature
+    [NUnit.Framework.DescriptionAttribute("BaseScenarios")]
+    public partial class BaseScenariosFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace PageObjectModel.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "EnterPointsScenarios", "These are the enter point scenarios tto the website", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BaseScenarios", "These scenarios can be used in any projects", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,16 +64,18 @@ namespace PageObjectModel.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Access Main Enter Point")]
+        [NUnit.Framework.DescriptionAttribute("Validate the title of a website")]
         [NUnit.Framework.CategoryAttribute("Debug")]
-        public virtual void AccessMainEnterPoint()
+        public virtual void ValidateTheTitleOfAWebsite()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Access Main Enter Point", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate the title of a website", new string[] {
                         "Debug"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
  testRunner.Given("I navigate to the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 7
+ testRunner.Then("I can see the web title \"Wikipedia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

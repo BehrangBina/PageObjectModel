@@ -20,6 +20,11 @@ namespace PageObjectModel.Steps
         {
            InstanceOf<BasePage>().NavigateMainEnterPoint();
         }
+        [Then(@"I can see the web title ""(.*)""")]
+        public void ThenICanSeeTheWebTitle(string expectedTitle)
+        {
+            InstanceOf<BasePage>().ValidatePageTitle(expectedTitle);
+        }
 
 
     }
