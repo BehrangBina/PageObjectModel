@@ -20,7 +20,7 @@ namespace PageObjectModel.Pages
     ///</remarks>
     public abstract class Page
     {
-        protected T InstanceOf<T>() where T : BasePage, new()
+        protected  T InstanceOf<T>() where T : BasePage, new()
         {
             var pageClass = new T {Driver = Driver.Browser()};
             return pageClass;

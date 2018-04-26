@@ -1,4 +1,5 @@
-﻿using PageObjectModel.Utils.Selenium;
+﻿using PageObjectModel.Pages;
+
 using TechTalk.SpecFlow;
 
 namespace PageObjectModel.Steps
@@ -17,8 +18,7 @@ namespace PageObjectModel.Steps
         [Given(@"I navigate to the home page")]
         public void GivenINavigateToTheHomePage()
         {
-            var url = ToBeReplacedWithProjectConf.Url;
-            Driver.Browser().Navigate().GoToUrl(url);
+           InstanceOf<BasePage>().NavigateMainEnterPoint();
         }
 
 

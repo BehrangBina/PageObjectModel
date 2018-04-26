@@ -1,6 +1,8 @@
-﻿namespace PageObjectModel.Steps
+﻿using PageObjectModel.Pages;
+
+namespace PageObjectModel.Steps
 {
-    public class BaseSteps
+    public class BaseSteps:Page
     {
     }
 }
