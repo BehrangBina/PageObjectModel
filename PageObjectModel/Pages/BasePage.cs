@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using PageObjectModel.Utils.Selenium;
+using TechTalk.SpecFlow;
 using static PageObjectModel.Utils.Selenium.Driver;
 namespace PageObjectModel.Pages
 {
@@ -32,6 +33,15 @@ namespace PageObjectModel.Pages
             var messsage = $":: URL: {GetTitle} - Expected:{expectedUrl}";
             Assert.IsTrue(currentUrl, $"#Error: {messsage}");
             Console.Out.WriteLine(messsage);
+        }
+
+        public void ValidateMultipleTextInPageSourece(Table table)
+        {
+            foreach (var row in table.Rows)
+            {
+                var textToValidate = row["expectedText"];
+                Assert.IsTrue(Driver.PageSource.Contains(textToValidate),$"{textToValidate}");
+            }
         }
     }
 }

@@ -30,6 +30,12 @@ namespace PageObjectModel.Steps
         {
             InstanceOf<BasePage>().ValidatePageUrl(expectedUrl);
         }
+        [Then(@"I can see")]
+        public void ThenICanSee(Table table)
+        {
+           InstanceOf<BasePage>().ValidateMultipleTextInPageSourece(table);
+        }
+
 
     }
 }
