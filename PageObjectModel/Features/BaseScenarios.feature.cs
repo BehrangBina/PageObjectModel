@@ -107,11 +107,11 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("03. Validate existance of multiple texts in PageSource")]
-        [NUnit.Framework.CategoryAttribute("Debug")]
+        [NUnit.Framework.CategoryAttribute("PhantomJs")]
         public virtual void _03_ValidateExistanceOfMultipleTextsInPageSource()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03. Validate existance of multiple texts in PageSource", new string[] {
-                        "Debug"});
+                        "PhantomJs"});
 #line 16
 this.ScenarioSetup(scenarioInfo);
 #line 4

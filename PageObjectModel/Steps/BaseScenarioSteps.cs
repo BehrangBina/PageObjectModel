@@ -20,22 +20,5 @@ namespace PageObjectModel.Steps
         {
            InstanceOf<BasePage>().NavigateMainEnterPoint();
         }
-        [Then(@"I can see the web title ""(.*)""")]
-        public void ThenICanSeeTheWebTitle(string expectedTitle)
-        {
-            InstanceOf<BasePage>().ValidatePageTitle(expectedTitle);
-        }
-        [Then(@"I can see the web url ""(.*)""")]
-        public void ThenICanSeeTheWebUrl(string expectedUrl)
-        {
-            InstanceOf<BasePage>().ValidatePageUrl(expectedUrl);
-        }
-        [Then(@"I can see")]
-        public void ThenICanSee(Table table)
-        {
-           InstanceOf<BasePage>().ValidateMultipleTextInPageSourece(table);
-        }
-
-
     }
 }
