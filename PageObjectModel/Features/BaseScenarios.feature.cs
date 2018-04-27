@@ -72,11 +72,11 @@ testRunner.Given("I navigate to the home page", ((string)(null)), ((TechTalk.Spe
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate the title of a website")]
+        [NUnit.Framework.DescriptionAttribute("02. Validate the title of a website")]
         [NUnit.Framework.CategoryAttribute("Debug")]
-        public virtual void ValidateTheTitleOfAWebsite()
+        public virtual void _02_ValidateTheTitleOfAWebsite()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate the title of a website", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02. Validate the title of a website", new string[] {
                         "Debug"});
 #line 8
 this.ScenarioSetup(scenarioInfo);
@@ -89,11 +89,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate the url of a website")]
+        [NUnit.Framework.DescriptionAttribute("01. Validate the url of a website")]
         [NUnit.Framework.CategoryAttribute("Debug")]
-        public virtual void ValidateTheUrlOfAWebsite()
+        public virtual void _01_ValidateTheUrlOfAWebsite()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate the url of a website", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01. Validate the url of a website", new string[] {
                         "Debug"});
 #line 12
 this.ScenarioSetup(scenarioInfo);
@@ -106,11 +106,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate existance of multiple texts in PageSource")]
+        [NUnit.Framework.DescriptionAttribute("03. Validate existance of multiple texts in PageSource")]
         [NUnit.Framework.CategoryAttribute("Debug")]
-        public virtual void ValidateExistanceOfMultipleTextsInPageSource()
+        public virtual void _03_ValidateExistanceOfMultipleTextsInPageSource()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate existance of multiple texts in PageSource", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03. Validate existance of multiple texts in PageSource", new string[] {
                         "Debug"});
 #line 16
 this.ScenarioSetup(scenarioInfo);
