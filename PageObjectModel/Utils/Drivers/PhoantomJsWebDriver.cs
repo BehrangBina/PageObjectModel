@@ -8,7 +8,7 @@ namespace PageObjectModel.Utils.Drivers
         internal static IWebDriver LoadPhanomJsDriver()
         {
             var driverService = PhantomJSDriverService.CreateDefaultService();
-            driverService.IgnoreSslErrors = true;
+            driverService.IgnoreSslErrors = false;
             driverService.LoadImages = false;
             driverService.Proxy = "none";
             driverService.HideCommandPromptWindow = true;

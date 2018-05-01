@@ -18,3 +18,6 @@ C:\Development\PageObjectModel\PageObjectModel\bin\Debug\System.ValueTuple.xml
 C:\Development\PageObjectModel\PageObjectModel\bin\Debug\WebDriver.xml
 C:\Development\PageObjectModel\PageObjectModel\obj\Debug\PageObjectModel.dll
 C:\Development\PageObjectModel\PageObjectModel\obj\Debug\PageObjectModel.pdb
+C:\Development\PageObjectModel\PageObjectModel\bin\Debug\WebDriver.Support.dll
+C:\Development\PageObjectModel\PageObjectModel\bin\Debug\WebDriver.Support.xml
+C:\Development\PageObjectModel\PageObjectModel\obj\Debug\PageObjectModel.csprojResolveAssemblyReference.cache

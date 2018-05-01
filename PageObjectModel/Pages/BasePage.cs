@@ -1,6 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
 using PageObjectModel.Utils.Selenium;
 using TechTalk.SpecFlow;
 using static PageObjectModel.Utils.Selenium.Driver;
@@ -17,6 +18,20 @@ namespace PageObjectModel.Pages
             var url = Settings.BaseURL;
             Browser().Navigate().GoToUrl(url);
             Browser().Manage().Window.Maximize();
+        }
+
+        public void NavToLink(By by)
+        {
+            Driver.FindElement(by).Click();
+        }
+
+        [FindsBy(How = How.Id,Using = "js-link-box-en")]
+        public IWebElement LinkEnglish { get; set; }
+
+        public EnglishHomePage NavEnglishHomePage()
+        {
+            LinkEnglish.Click(); //nullref exception becuase element not defined in page
+            return InstanceOf<EnglishHomePage>();
         }
 
         public void ValidatePageTitle(string expectedTitle)

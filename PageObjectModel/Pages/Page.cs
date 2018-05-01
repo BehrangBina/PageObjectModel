@@ -1,4 +1,5 @@
-﻿using PageObjectModel.Utils.Selenium;
+﻿using OpenQA.Selenium.Support.PageObjects;
+using PageObjectModel.Utils.Selenium;
 
 namespace PageObjectModel.Pages
 {
@@ -23,6 +24,8 @@ namespace PageObjectModel.Pages
         protected  T InstanceOf<T>() where T : BasePage, new()
         {
             var pageClass = new T {Driver = Driver.Browser()};
+            // Avoid null refrence exception 
+            PageFactory.InitElements(Driver.Browser(),pageClass);
             return pageClass;
         }
     }
